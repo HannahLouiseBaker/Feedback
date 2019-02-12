@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Feedback</title>
+    <link href="StyleSheet.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Alice" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Barlow" type="text/css" rel="stylesheet"/>
+  </head>
+  <body>
+    <main id="main">
+      <header>
+        <h1 id="title">Olive & El</h1>
+      </header>
+      <form id="survey-form">
+        <h2 class="info"><strong>Feedback Form</strong></h2>
+        <p id="description" class="info">Please fill out the form to let us know how we can improve our organic veg boxes.</p>
+        <label for="name" id="name-label" class="col1"><strong>*Your Name:</strong></label>
+        <input id="name" class="col2" type="text" maxlength="70" name="name" placeholder="Enter your Name" required/>
+        <label for="email" id="email-label" class="col1"><strong>*Your Email:</strong></label>
+        <input id="email" class="col2" type="email" name="email" placeholder="Enter your Email" required/>
+        <label for="number" id="number-label" class="col1"><strong>How many times have you ordered an Olive & El organic veg box?</strong></label>
+        <input id="number" class="col2" type="number" name="timeframe" min="1" max="24" placeholder="No." pattern="[0-9]"/>
+        <label for="dropdown" class="col1"><strong>Which box do you normally order?</strong></label>
+        <select id="dropdown" class="col2" name="box-type">
+          <option value="small-box">Small Box</option>
+          <option value="medium-box">Medium Box</option>
+          <option value="big-box">Big Box</option>
+          <option value="family-box">Family Box</option>
+        </select>
+        <p class="col1"><strong>How likely are you to recommend Olive & El to a friend?</strong></p>
+        <div class="col2">
+        <label for="very">
+          <input id="very" type="radio" name="recommendation" value="very"> Very - in fact I already have!</label>
+        <br/>
+        <label for="might">
+          <input id="might" type="radio" name="recommendation" value="might"> I Might</label>
+        <br/>
+        <label for="won't">
+          <input id="won't" type="radio" name="recommendation" value="won't"> I Definitely Won't</label>
+        <br/>
+        </div>
+        <div class="col1">
+        <p><strong>What do you think could be improved about Olive & El organic veg boxes?</strong></p>
+        <p><strong>(Check all that apply)</strong></p>
+        </div>
+        <div class="col2">
+        <label for="variety">
+          <input id="variety" type="checkbox" name="improvements" value="greater-variety"> A greater variety of vegetables</label>
+        <br/>
+        <label for="delivery">
+          <input id="delivery" type="checkbox" name="improvements" value="delivery-slots"> More options for delivery slots</label>
+        <br/>
+        <label for="recipe">
+          <input id="recipe" type="checkbox" name="improvements" value="recipe-ideas"> Help with recipe ideas</label>
+        <br/>
+        <label for="service">
+          <input id="service" type="checkbox" name="improvements" value="customer-service"> Better customer service</label>
+        <br/>
+        <label for="sizes">
+          <input id="sizes" type="checkbox" name="improvements" value="box-sizes"> A bigger range of box sizes</label>
+        <br/>
+        <label for="all-above">
+          <input id="all-above" type="checkbox" name="improvements" value="all-above"> All of the above</label>
+        </div>
+        <p class="col1"><strong>Any comments or suggestions?</strong></p>
+        <textarea class="col2" rows="5" cols="40">Write any comments/suggestions here.</textarea>
+        <button id="submit" type="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+</html>
